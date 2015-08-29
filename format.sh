@@ -26,11 +26,11 @@ then
 	echo "Enter USB Dev name (default press only Enter key) :"
 	read newName
 	
-	umount $dev
+	umount $dev #unmout device
 	if [ "$name" != "" ]
 	then
 		#mys=$(df | grep $dev |awk '{print $NF;}')
-		sudo mkfs.vfat -n $newName -I $dev	
+		sudo mkfs.vfat -n $newName -I $dev	#need to give password
 		tput setaf 2
 		echo  $dev "[" $newName "] formatted to FAT32 succusefully..!!"
 	else
