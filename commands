@@ -1,0 +1,8 @@
+#replace remote repo location when support time end
+#make copy of "sources.list" file before use 
+sudo sed -i -e 's/archive.ubuntu.com\|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
+
+#install firefox from tar
+http://www.libre-software.net/how-to-install-firefox-on-ubuntu-linux-mint
+
+
